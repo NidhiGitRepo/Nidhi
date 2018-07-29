@@ -10,6 +10,11 @@
         <field>Configuration__c.Value__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Holiday__c.Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Admin</label>
     <objectPermissions>
@@ -21,12 +26,25 @@
         <object>Configuration__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Holiday__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <pageAccesses>
         <apexPage>DisplayObjectSummary</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <tabSettings>
         <tab>Configuration__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Holiday__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
 </PermissionSet>
